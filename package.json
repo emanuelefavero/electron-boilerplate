@@ -1,0 +1,16 @@
+{
+  "name": "myelectronapp",
+  "productName": "MyElectronApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Emanuele Favero",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^20.2.0"
+  }
+}
