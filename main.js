@@ -57,17 +57,16 @@ function createAboutWindow() {
     // icon: `${__dirname}/assets/icons/Icon_256x256.png`,
 
     // HIDE TITLE BAR
-    // transparent: true,
-    // titleBarStyle: 'hidden',
-    // titleBarOverlay: {
-    //   color: '#2f3241',
-    //   symbolColor: '#74b1be',
-    // },
-    // // backgroundColor: '#2e2c29',
-    // webPreferences: {
-    //   contextIsolation: true,
-    //   preload: path.join(__dirname, 'preload.js'),
-    // },
+    transparent: true,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#2f3241',
+      symbolColor: '#74b1be',
+    },
+    webPreferences: {
+      contextIsolation: true,
+      preload: path.join(__dirname, 'preload.js'),
+    },
   })
 
   aboutWindow.loadFile(path.join(__dirname, './renderer/about.html'))
