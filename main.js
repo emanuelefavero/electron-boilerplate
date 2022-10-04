@@ -12,13 +12,16 @@ function createMainWindow() {
   mainWindow = new BrowserWindow({
     // Make window bigger if isDev
     // width: isDev ? 1000 : 500,
-    x: 0,
-    y: 0,
-    width: 500,
-    height: 500,
+    // x: 0,
+    // y: 0,
+    width: 768,
+    height: 480,
+    minWidth: 150,
+    minHeight: 150,
     // SET ICON
     // icon: `${__dirname}/assets/icons/Icon_256x256.png`,
-    resizable: false,
+    frame: false,
+    resizable: true,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: true,
@@ -50,11 +53,16 @@ function createMainWindow() {
 // About Window
 function createAboutWindow() {
   aboutWindow = new BrowserWindow({
+    x: 0,
+    y: 0,
     width: 300,
     height: 300,
     title: 'About Electron',
     // SET ICON
     // icon: `${__dirname}/assets/icons/Icon_256x256.png`,
+
+    frame: false,
+    resizable: false,
 
     // HIDE TITLE BAR
     transparent: true,
