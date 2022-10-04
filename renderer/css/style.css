@@ -22,3 +22,21 @@ body {
   background-color: #fff;
   color: #000;
 }
+
+/* TITLEBAR */
+.titlebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 27px;
+  background-color: #000;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-app-region: drag;
+  transition: 0.1s ease-in;
+}
+
+.titlebar:hover {
+  background-color: rgb(21, 21, 21);
+}

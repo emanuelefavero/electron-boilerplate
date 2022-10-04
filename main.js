@@ -12,7 +12,8 @@ function createMainWindow() {
   mainWindow = new BrowserWindow({
     // Make window bigger if isDev
     // width: isDev ? 1000 : 500,
-
+    x: 0,
+    y: 0,
     width: 500,
     height: 500,
     // SET ICON
@@ -25,17 +26,16 @@ function createMainWindow() {
     },
 
     // HIDE TITLE BAR
-    // transparent: true,
-    // titleBarStyle: 'hidden',
-    // titleBarOverlay: {
-    //   color: '#2f3241',
-    //   symbolColor: '#74b1be',
-    // },
-    // // backgroundColor: '#2e2c29',
-    // webPreferences: {
-    //   contextIsolation: true,
-    //   preload: path.join(__dirname, 'preload.js'),
-    // },
+    transparent: true,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#2f3241',
+      symbolColor: '#74b1be',
+    },
+    webPreferences: {
+      contextIsolation: true,
+      preload: path.join(__dirname, 'preload.js'),
+    },
   })
 
   // Show devtools automatically if in development
